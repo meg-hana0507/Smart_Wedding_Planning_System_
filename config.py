@@ -1,4 +1,3 @@
-
 import os
 
 # Base directory of the project
