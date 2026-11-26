@@ -27,15 +27,14 @@ def seed_all():
         )
         db.add(sample_user)
         db.flush()  # Generates sample_user.id
-
         sample_wedding = WeddingProfile(
-            user_id=sample_user.id,
-            bride_name="Priya Verma",
-            groom_name="Rahul Sharma",
-            wedding_date=date(2026, 12, 15),
-            location="Udaipur, Rajasthan",
-            total_budget=2500000.0  # 25 Lakhs
-        )
+    user_id=sample_user.id,
+    bride_name="Nila",
+    groom_name="Aravind",
+    wedding_date=date(2026, 12, 15),
+    location="Coimbatore, Tamil Nadu",
+    total_budget=2500000.0
+)
         db.add(sample_wedding)
         db.flush()  # Generates sample_wedding.id
 
